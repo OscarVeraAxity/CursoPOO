@@ -15,20 +15,20 @@ class Cat  {
         this.texture = texture;
     }
 
-    breath(){
-        console.log(`${this.name} is breathing`);
+    breath():string{
+        return `${this.name} is breathing`;
     }
-    eat(food:string):void{
-        console.log(`${this.name} eats ${food}`);
+    eat(food:string):string{
+        return `${this.name} eats ${food}`;
     }
-    run(destination:string):void{
-        console.log(`${this.name} goes to ${destination}`)
+    run(destination:string):string{
+        return `${this.name} goes to ${destination}`;
     }
-    sleep(hours:number):void{
-        console.log(`${this.name} sleeps ${hours} hours`)
+    sleep(hours:number):string{
+        return `${this.name} sleeps ${hours} hours`;
     }
-    mew():void{
-        console.log(`${this.name} does mew!!`)
+    mew():string{
+        return `${this.name} does mew!!`;
     }
 }
 
@@ -54,4 +54,7 @@ console.log(Gato1);
 console.log(Gato2);
 
 console.log(Gato1.eat("Atun"));
-console.log(Gato1.eat("Atun"));
+console.log(Gato1.breath());
+console.log(Gato1.run("downtown"));
+console.log(Gato1.sleep(11));
+console.log(Gato1.mew());
